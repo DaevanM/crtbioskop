@@ -1,0 +1,142 @@
+.homeBG {
+    width: 100%;
+    height: 100vh;
+    background: url("../images/bg/home.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.wlcm {
+    height: 50%;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+    text-shadow: 2px 2px black;
+}
+
+.movieBG {
+    height: auto;
+    background: url("../images/bg/movie.jpg");
+    background-size: cover;
+}
+
+.animeBG {
+    height: auto;
+    background: url("../images/bg/tv.png");
+    background-size: cover;
+}
+
+.movieImage {
+    background-color: black;
+    margin: 5px;
+    padding: 5px;
+    display: block;
+}
+
+.overcontain {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.85;
+    overflow: hidden;
+    width: 100%;
+    height: 35px;
+    transition: .5s ease;
+}
+
+.overcontain:hover .overlay {
+    height: 100%;
+  }
+
+.judul {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-shadow: 2px 2px black;
+}
+
+h6 {
+    color: rgb(156, 156, 156);
+}
+
+.text {
+    margin-top: 10px;
+    color: white;
+    font-size: 13px;
+}
+
+.text-tv {
+    margin-top: 10px;
+    color: white;
+    font-size: 10px;
+}
+
+.rating {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.ratcontain {
+    display: inline-flex;
+}
+
+.ratingStarContain {
+    box-sizing: border-box;
+}
+
+.ratingStar {
+    position: relative;
+    overflow: hidden;
+    color: #ffc700;
+    height: 15px;
+    line-height: 1;
+    width: 85px;
+    font-size: 15px;
+    margin: 0 auto;
+}
+
+.ratingStar::before {
+    content: "";
+    font-family: "font awesome 5 free";
+    top: 0;
+    left: 0;
+    color: #686868;
+    height: 15px;
+}
+
+.ratcontain .ratingStarContain .ratingStar span {
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding-top: 15px;
+}
+
+.ratcontain .ratingStarContain .ratingStar span::before {
+    content: "";
+    font-family: "font awesome 5 free";
+    font-weight: 900;
+    top: 0;
+    position: absolute;
+    left: 0;
+}
